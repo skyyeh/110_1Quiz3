@@ -11,15 +11,18 @@ namespace _110_1Quiz3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string S_Name = "霸道總裁";
-            string S_Id "A123456789";
-            Session["name"] = S_Name;
-            Session["Id"] = S_Id;
-            Respomse.Write("Session已註冊，保存資訊有2 <br />");
-            Respomse.Write("保存客戶端姓名"+ S_Name+  "<br />");
-            Respomse.Write("保存客戶端ID" + S_Id + "<br />");
-            Respomse.Write("會議室ID" + Session.SessionID + "<br />");
-            Respomse.Write("生命週期" + Session.Timeout.ToString() + "分鐘 <br />");
+            string s_Name = "霸道總裁";
+            string s_Id = "A123456789";
+            Session["name"] = s_Name;
+            Session["id"] = s_Id;
+            Response.Write("Session已註冊，保存資訊有2 <br />");
+            Response.Write("保存客戶端姓名" + s_Name + "<br />");
+            Response.Write("保存客戶端姓名" + s_Name + "<br />");
+            Response.Write("保存客戶端ID" + s_Id + "<br />");
+            Response.Write("會議室ID" + Session.SessionID + "<br />");
+            Response.Write("生命週期" + Session.Timeout.ToString() + "分鐘 <br />");
+
+
 
         }
     }
